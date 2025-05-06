@@ -1,0 +1,41 @@
+.dashboard {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: var(--primary);
+  align-content: center;
+}
+
+.dashboard__header {
+  color: var(--white);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+
+}
+
+.batoh__uvod {
+  height: 450px;
+  text-align: center;
+  align-content: center;
+}
+
+.button {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 0.25em;
+  padding: 1rem;
+  width: 6rem;
+  justify-self: center;
+}
+
+.fotogalerie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produkty {
+  display: flex;
+  justify-content: space-around;
+}
