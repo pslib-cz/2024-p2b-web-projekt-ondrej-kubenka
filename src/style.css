@@ -2,14 +2,16 @@
     color-scheme: light;
     --background: #ffffff;
     --primary: #003580;
+    --secondary: #1c1f2b;
     --red: #dc1e2c;
+    --blue: #30a2e4;
 }
 
 html {
     font-family: "Roboto", sans-serif;
 }
 
-body, menu {
+body, menu, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     /*color: var(--background);*/
 }
@@ -24,8 +26,8 @@ a {
     text-decoration: none;   
 }
 
-div {
-    margin-top: 1em;
+main > * {
+    margin-top: 1.5em;
 }
 
 /*    
@@ -33,7 +35,7 @@ div {
     :root {
         color-scheme: dark;
         --background: #242424;
-        --primary: #0094FF;
+        --primary: #1c1f2b;
         --secondary: #001D60;
     }
 }
