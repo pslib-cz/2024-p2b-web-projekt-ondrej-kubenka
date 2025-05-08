@@ -40,11 +40,91 @@
 
 .produkty {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 1em;
 }
 
 .produkty__uvod {
   height: 31em;
+  position: relative;
+}
+
+.produkty__zaobleni {
+  border-radius: 1em;
+}
+
+.produkty__uvod__text {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produkty__zauvodem {
+    padding-top: 11em;
+    padding-bottom: 11em;
+    text-align: center;
+    background-image: url(/public/batoh1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.vyhody {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: var(--primary);
+}
+
+.footer__1 {
+  display: flex;
+  order: 0;
+}
+
+.footer__2 {
+  display: flex;
+  order: 1;
+}
+
+.footer__3 {
+  display: flex;
+  order: 2;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  order: 1;
+  width: 2px;
+  height: 1.5em;
+  background-color: var(--background);
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  order: 1;
+  width: 2px;
+  height: 1.5em;
+  background-color: var(--background);
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .card {
