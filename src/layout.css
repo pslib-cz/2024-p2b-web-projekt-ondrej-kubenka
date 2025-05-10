@@ -10,12 +10,15 @@
 }
 
 .batoh__uvod {
+  display: flex;
+  flex-direction: column;
   padding-top: 10em;
   padding-bottom: 10em;
-  text-align: center;
+  align-items: center;
   background-image: url('/public/batoh.jpg');
   background-size: cover;
   background-position: center;
+  gap: 1em;
 }
 
 .button {
@@ -64,6 +67,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: .5em;
 }
 
 .produkty__zauvodem {
@@ -75,17 +79,51 @@
     background-position: center;
 }
 
+.produkty__text {
+  max-width: 35em;
+  text-align: start;
+  justify-self: center
+}
+
 .vyhody {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  text-align: start;
   color: var(--secondary);
+}
+
+.vyhody__text {
+  max-width: 20em;
+  padding: 1em;
+  text-align: center;
+}
+
+.vyhody__grid1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.vyhody__grid2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.vyhody__grid3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.vyhody__grid4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 .footer {
   display: flex;
   justify-content: space-evenly;
-  padding: 1em;
+  align-items: center;
+  height: 3rem;
   margin-top: 1em;
   background-color: var(--primary);
 }
@@ -110,7 +148,7 @@
   display: block;
   order: 1;
   width: 2px;
-  height: 1.5em;
+  height: 50%;
   background-color: var(--background);
   flex-shrink: 0;
   align-self: center;
@@ -121,7 +159,7 @@
   display: block;
   order: 1;
   width: 2px;
-  height: 1.5em;
+  height: 50%;
   background-color: var(--background);
   flex-shrink: 0;
   align-self: center;
