@@ -7,23 +7,9 @@
     --blue: #30a2e4;
 }
 
-html {
-    font-family: "Roboto", sans-serif;
-    color: var(--background);
-}
-
-body, menu, h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    display: block;
-    text-decoration: none;   
+body {
+    min-width: 320px;
+    min-height: 100vh;
 }
 
 main > * {

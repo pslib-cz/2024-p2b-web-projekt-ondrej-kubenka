@@ -9,13 +9,29 @@
   justify-content: space-evenly;
 }
 
+.link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.link--active {
+  color: var(--blue);
+}
+
+.menu_content {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+}
+
 .batoh__uvod {
   display: flex;
   flex-direction: column;
   padding-top: 10em;
   padding-bottom: 10em;
   align-items: center;
-  background-image: url('/public/batoh.jpg');
+  background-image: url('/public/images/batoh.jpg');
   background-size: cover;
   background-position: center;
   gap: 1em;
@@ -45,6 +61,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .produkty__uvod {
@@ -74,7 +91,7 @@
     padding-top: 11em;
     padding-bottom: 11em;
     text-align: center;
-    background-image: url(/public/batoh1.jpg);
+    background-image: url(/public/images/batoh1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -96,7 +113,7 @@
 .vyhody__text {
   max-width: 20em;
   padding: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 .vyhody__grid1 {
@@ -213,5 +230,11 @@
   }
   to {
     --animace: 360deg;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .menu_content {
+      position: static;
   }
 }
