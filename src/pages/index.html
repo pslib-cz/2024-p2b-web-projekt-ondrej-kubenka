@@ -28,29 +28,41 @@
             <p>Lehký a pevný materiál: Odolá každodennímu používání i náročným podmínkám. Polstrovaný prostor pro notebook (do 15,6") – bezpečné uložení techniky. Vodoodpudivá úprava: Nepřekvapí tě ani deštivý den. Ergonomická záda a nastavitelné popruhy: Maximální pohodlí i při celodenním nošení.Přední kapsa na zip: Rychlý přístup k drobnostem.</p>
         </div>
         <section class="fotogalerie">
-            <div>
-                <img class="img-responsive" src="/public/images/batoh1.webp" alt="Obrazek Batohu">
-            </div>
-            <div>
-                <img class="img-responsive" src="public/images/batoh2.webp" alt="Obrazek Batohu">
-            </div>
-            <div>
-                <img class="img-responsive" src="public/images/batoh3.webp" alt="Obrazek Batohu">
-            </div>
-            <div>
-                <img class="img-responsive" src="public/images/batoh4.webp" alt="Obrazek Batohu">
-            </div>
+            <figure class="info">
+                <a class="picture__link" href="%BASE_URL%images/batoh1.webp">
+                    <img class="img-responsive" src="/images/batoh1.webp" alt="Obrazek Batohu">
+                    <div class="info__text">Batoh 1</div>
+                </a>
+            </figure>
+            <figure class="info">
+                <a class="picture__link" href="%BASE_URL%images/batoh2.webp">
+                    <img class="img-responsive" src="%BASE_URL%images/batoh2.webp" alt="Obrazek Batohu">
+                    <div class="info__text">Batoh 2</div>
+                </a>
+            </figure>
+            <figure class="info">
+                <a class="picture__link" href="%BASE_URL%public/images/batoh3.webp">
+                    <img class="img-responsive" src="%BASE_URL%public/images/batoh3.webp" alt="Obrazek Batohu">
+                    <div class="info__text">Batoh 3</div>
+                </a>
+            </figure>
+            <figure class="info">
+                <a class="picture__link" href="%BASE_URL%public/images/batoh4.webp">
+                    <img class="img-responsive" src="%BASE_URL%public/images/batoh4.webp" alt="Obrazek Batohu">
+                    <div class="info__text">Batoh 4</div>
+                </a>
+            </figure>
         </section>
         <section class="produkty">
             <div class="produkty__uvod">
-                <img class="img-responsive produkty__zaobleni" src="public/images/batoh_produkt1.jpg" alt="Obrazek Batohu">
+                <img class="img-responsive produkty__zaobleni" src="%BASE_URL%images/batoh_produkt1.jpg" alt="Obrazek Batohu">
                 <div class="produkty__uvod__text">
                     <h1>Batoh 1</h1>
                     <a href="#" class="button link">Koupit ihned!</a>
                 </div>
             </div>
             <div class="produkty__uvod">
-                <img class="img-responsive produkty__zaobleni" src="public/images/batoh_produkt2.jpg" alt="Obrazek Batohu">
+                <img class="img-responsive produkty__zaobleni" src="%BASE_URL%images/batoh_produkt2.jpg" alt="Obrazek Batohu">
                 <div class="produkty__uvod__text">
                     <h1>Batoh 2</h1>
                     <a href="#" class="button link">Koupit ihned!</a>
@@ -66,21 +78,33 @@
             </div>            
         </section>
         <section class="vyhody">
-            <div class="vyhody__text vyhody__grid1 icon icon-umbrella">
-                <h1>Voděodolný materiál</h1>
-                <p>Připraven na déšť i dobrodružství.</p>
-            </div>
-            <div class="vyhody__text vyhody__grid2 icon icon-shopping_bag">
-                <h1>Chytré kapsy</h1>
-                <p>Místo na notebook, telefon a další.</p>
-            </div>
-            <div class="vyhody__text vyhody__grid3 icon icon-recycle">
-                <h1>Ekologická výroba</h1>
-                <p>Při výrobě myslíme i na přírodu a indické děti.</p>
-            </div>
-            <div class="vyhody__text vyhody__grid4 icon icon-new-window">
-                <h1>Ergonomický design</h1>
-                <p>Polstrovaná záda a popruhy navržené pro dlouhé nošení bez bolesti zad nebo ramen.</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <figure class="vyhody__text vyhody__grid1 icon icon-umbrella swiper-slide">
+                        <h1>Voděodolný materiál</h1>
+                        <p>Připraven na déšť i dobrodružství.</p>
+                    </figure>
+                    <figure class="vyhody__text vyhody__grid2 icon icon-shopping_bag swiper-slide">
+                        <h1>Chytré kapsy</h1>
+                        <p>Místo na notebook, telefon a další.</p>
+                    </figure>
+                    <figure class="vyhody__text vyhody__grid3 icon icon-recycle swiper-slide">
+                        <h1>Ekologická výroba</h1>
+                        <p>Při výrobě myslíme i na přírodu a indické děti.</p>
+                    </figure>
+                    <figure class="vyhody__text vyhody__grid4 icon icon-new-window swiper-slide">
+                        <h1>Ergonomický design</h1>
+                        <p>Polstrovaná záda a popruhy navržené pro dlouhé nošení<br>bez bolesti zad nebo ramen.</p>
+                    </figure>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+          
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </section>
     </main>

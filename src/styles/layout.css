@@ -19,6 +19,48 @@
   color: var(--blue);
 }
 
+.info {
+  position: relative;
+}
+
+.info a::before {
+  content: "i";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+  background-color: #e0e0e0;
+  height: 16px;
+  width: calc(16px + 3px);
+  text-align: center;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: .5em;
+  padding-bottom: 3px;
+  border-radius: 50%;
+  border: 3px solid #be8024;
+}
+
+.info a:hover .info__text {
+  visibility: visible;
+}
+
+.info a:hover::before {
+  color: white;
+  background-color: gray;
+}
+
+.info__text {
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  padding: .25em;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
 .menu_content {
   position: absolute;
   top: -10000px;
@@ -60,12 +102,13 @@
 .produkty {
   display: flex;
   justify-content: space-evenly;
-  gap: 1em;
+  gap: 1.5em;
   flex-wrap: wrap;
 }
 
 .produkty__uvod {
-  height: 31em;
+  max-height: 500px;
+  max-width: 500px;
   position: relative;
 }
 
@@ -103,37 +146,30 @@
 }
 
 .vyhody {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  text-align: start;
   color: var(--secondary);
 }
 
 .vyhody__text {
-  max-width: 20em;
-  padding: 1em;
-  text-align: left;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-.vyhody__grid1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
+.swiper {
+  width: 100%;
 }
 
-.vyhody__grid2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+.swiper-slide {
+  font-size: 18px;
 }
 
-.vyhody__grid3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+.swiper-button-prev, .swiper-button-next {
+    color: var(--secondary, var(--secondary)) !important;
 }
 
-.vyhody__grid4 {
-  grid-column-start: 4;
-  grid-column-end: 5;
+.swiper-wrapper {
+  padding-bottom: 2em;
+ align-items: center;
 }
 
 .footer {
@@ -186,7 +222,7 @@
   margin: 0 auto;
   margin-top: 1.5em;
   padding: 2em;
-  width: 300px;
+  max-width: 300px;
   background: var(--secondary);
   text-align: center;
   border-radius: 10px;
