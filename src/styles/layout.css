@@ -131,6 +131,11 @@
 }
 
 .produkty__zauvodem {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: .5em;
     padding-top: 11em;
     padding-bottom: 11em;
     text-align: center;
@@ -141,8 +146,6 @@
 
 .produkty__text {
   max-width: 35em;
-  justify-self: center;
-  padding-bottom: 1em;
 }
 
 .vyhody {
