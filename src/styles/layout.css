@@ -7,6 +7,7 @@
 .dashboard__header {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.6em
 }
 
 .link {
@@ -69,15 +70,12 @@
 }
 
 .batoh__uvod {
-  display: flex;
-  flex-direction: column;
   padding-top: 10em;
   padding-bottom: 10em;
-  align-items: center;
+  text-align: center;
   background-image: url('/public/images/batoh.jpg');
   background-size: cover;
   background-position: center;
-  gap: 1em;
 }
 
 .button {
@@ -85,7 +83,6 @@
   color: var(--background);
   border-radius: 0.25em;
   padding: 1rem;
-  width: 6rem;
   justify-self: center;
 }
 
@@ -119,15 +116,9 @@
 .produkty__uvod__text {
   position: absolute;
   text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: .5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .produkty__zauvodem {
@@ -167,12 +158,11 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-    color: var(--secondary, var(--secondary)) !important;
+  color: var(--secondary, var(--secondary)) !important;
 }
 
 .swiper-wrapper {
-  padding-bottom: 2em;
- align-items: center;
+  align-items: center;
 }
 
 .footer {
@@ -222,8 +212,8 @@
 }
 
 .card {
-  margin: 0 auto;
-  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2em;
   max-width: 300px;
   background: var(--secondary);
@@ -274,6 +264,10 @@
 
 @media screen and (min-width: 670px) {
   .menu_content {
-      position: static;
+    position: static;
+    padding-left: .25em;
+  }
+  .dashboard__header {
+    font-size: 1.1em;
   }
 }
