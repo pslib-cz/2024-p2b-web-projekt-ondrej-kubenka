@@ -6,6 +6,7 @@
   font-variation-settings:
     "wdth" 100;
   color: var(--background);
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, a {
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6, a {
   font-style: normal;
 }
 
-figure > h1, .card > h1 {
+h1, h2, h3, h4, h5, h6, a, p {
   margin: 0;
 }
 
@@ -26,12 +27,6 @@ menu {
   margin: 0;
   padding: 0;
 }
-
-/*
-a:hover {
-  box-shadow: 0 1px 3px var(--blue);
-}
-*/
 
 @font-face {
   font-family: 'icomoon';

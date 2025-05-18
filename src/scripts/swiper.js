@@ -1,21 +1,3 @@
-import './styles/style.css'
-import './styles/layout.css'
-import './styles/normalize.css'
-import './styles/typography.css'
-
-import lightGallery from 'lightgallery';
-import 'lightgallery/css/lightgallery-bundle.css';
-
-// Plugins
-import lgThumbnail from 'lightgallery/plugins/thumbnail'
-import lgZoom from 'lightgallery/plugins/zoom'
-
-lightGallery(document.querySelector('.fotogalerie'), {
-  selector: ".picture__link",
-  plugins: [lgZoom, lgThumbnail],
-  speed: 500,
-});
-
 import Swiper from 'swiper';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';

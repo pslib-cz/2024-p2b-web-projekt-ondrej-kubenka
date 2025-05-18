@@ -7,9 +7,19 @@
     --blue: #30a2e4;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    min-width: 320px;
-    min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 main > * {

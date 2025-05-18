@@ -12,9 +12,9 @@
     <header>
         <nav class="dashboard">
             <menu class="dashboard__header">
-                <li><a href="#" class="link link--active icon icon-home"><span class="menu_content">Produkt</span></a></li>
-                <li><a href="#" class="link icon icon-address-book"><span class="menu_content">O nás</span></a></li>
-                <li><a href="#" class="link icon icon-location"><span class="menu_content">Kontakty</span></a></li>
+                <li class="hover_effect"><a href="%BASE_URL%index.html" class="link link--active icon icon-home"><span class="menu_content">Produkt</span></a></li>
+                <li class="hover_effect"><a href="%BASE_URL%about.html" class="link icon icon-address-book"><span class="menu_content">O nás</span></a></li>
+                <li class="hover_effect"><a href="#" class="link icon icon-location"><span class="menu_content">Kontakty</span></a></li>
             </menu>
         </nav>
     </header>
@@ -28,9 +28,9 @@
         </div>
         <div class ="card">
             <h1>Výhody našeho batohu.</h1>
-            <p>Lehký a pevný materiál: Odolá každodennímu používání i náročným podmínkám. Polstrovaný prostor pro notebook (do 15,6") – bezpečné uložení techniky. Vodoodpudivá úprava: Nepřekvapí tě ani deštivý den. Ergonomická záda a nastavitelné popruhy: Maximální pohodlí i při celodenním nošení.Přední kapsa na zip: Rychlý přístup k drobnostem.</p>
+            <p>Lehký a pevný materiál:<br>Odolá každodennímu používání i náročným podmínkám.</p><hr><p>Polstrovaný prostor pro notebook (do 15,6") – bezpečné uložení techniky.</p><hr><p>Vodoodpudivá úprava:<br>Nepřekvapí tě ani deštivý den.</p><hr><p>Ergonomická záda a nastavitelné popruhy:<br>Maximální pohodlí i při celodenním nošení.</p><hr><p>Přední kapsa na zip:<br>Rychlý přístup k drobnostem.</p>
         </div>
-        <section>
+        <section class="fotogalerie">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <figure class="info swiper-slide">
@@ -96,19 +96,19 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <figure class="vyhody__text icon icon-umbrella swiper-slide">
-                        <h1>Voděodolný materiál</h1>
+                        <h2>Voděodolný materiál</h2>
                         <p>Připraven na déšť i dobrodružství.</p>
                     </figure>
                     <figure class="vyhody__text icon icon-shopping_bag swiper-slide">
-                        <h1>Chytré kapsy</h1>
+                        <h2>Chytré kapsy</h2>
                         <p>Místo na notebook, telefon a další.</p>
                     </figure>
                     <figure class="vyhody__text icon icon-recycle swiper-slide">
-                        <h1>Ekologická výroba</h1>
+                        <h2>Ekologická výroba</h2>
                         <p>Při výrobě myslíme i na přírodu a indické děti.</p>
                     </figure>
                     <figure class="vyhody__text icon icon-new-window swiper-slide">
-                        <h1>Ergonomický design</h1>
+                        <h2>Ergonomický design</h2>
                         <p>Polstrovaná záda a popruhy navržené pro dlouhé nošení<br>bez bolesti zad nebo ramen.</p>
                     </figure>
                 </div>
@@ -124,16 +124,18 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__1">
+        <div class="footer__1 hover_effect">
             <a href="https://www.example.com/" target="_blank" class="link icon icon-twitter">&nbsp;Twitter</a>
         </div>
-        <div class="footer__2">
+        <div class="footer__2 hover_effect">
             <a href="https://www.example.com/" target="_blank" class="link icon icon-instagram">&nbsp;Instagram</a>
         </div>
-        <div class="footer__3">
+        <div class="footer__3 hover_effect">
             <a href="https://www.example.com/" target="_blank" class="link icon icon-facebook2">&nbsp;Facebook</a>
         </div>
     </footer>    
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/lightgallery.js"></script>
+    <script type="module" src="/src/scripts/swiper.js"></script>
 </body>
 </html>
