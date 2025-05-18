@@ -103,9 +103,24 @@
   gap: 1em;
   padding-top: 10em;
   padding-bottom: 10em;
-  background-image: url('/public/images/batoh.jpg');
+  background-image: url('/public/images/batoh.webp');
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.batoh__uvod::before, .produkty__zauvodem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.425);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.batoh__uvod > *, .produkty__zauvodem > * {
+  position: relative;
+  z-index: 1;
 }
 
 .button {
@@ -162,9 +177,10 @@
     gap: 1em;
     padding-top: 11em;
     padding-bottom: 11em;
-    background-image: url(/public/images/batoh1.jpg);
+    background-image: url('/public/images/batoh_1.webp');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .produkty__text {
@@ -257,8 +273,6 @@ hr {
 }
 
 .card {
-  margin-left: auto;
-  margin-right: auto;
   padding: 2em;
   max-width: 400px;
   background: var(--secondary);
@@ -335,12 +349,6 @@ hr {
   }
 }
 /* Druhý web */
-.omezeni_velikosti {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto; 
-}
-
 .about__uvod {
   padding-top: 11em;
   padding-bottom: 11em;
@@ -355,6 +363,7 @@ hr {
   padding-right: 1em;
   padding-left: 1em;
 }
+
 /* Třetí web */
 .flex_container {
   align-items: center;
