@@ -1,0 +1,1 @@
+:root{color-scheme:light;--background: #ffffff;--primary: #003580;--secondary: #1c1f2b;--red: #dc1e2c;--blue: #30a2e4}html,body{margin:0;padding:0}body{min-height:100vh;display:flex;flex-direction:column}main{flex:1 0 auto}main>*{margin-top:1.5em}
