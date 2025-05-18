@@ -316,6 +316,20 @@ hr {
   .dashboard__header {
     font-size: 1.1em;
   }
+  .grid__container {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 3em !important;
+    max-width: 1200px;
+  } 
+  .flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    text-align: start;
+  }
 }
 /* Druhý web */
 .omezeni_velikosti {
@@ -325,15 +339,51 @@ hr {
 }
 
 .about__uvod {
-  padding: 11em;
+  padding-top: 11em;
+  padding-bottom: 11em;
   background-image: url('/public/images/batoh_about.webp');
   background-size: cover;
   background-position: center;
 }
 
-.about__uvod__text {
+.uvod__text {
   color: var(--secondary);
   text-align: start;
   padding-right: 1em;
   padding-left: 1em;
+}
+/* Třetí web */
+.flex_container {
+  align-items: center;
+  color: var(--secondary);
+  text-align: start;
+}
+
+.grid__container {
+  display: grid;
+  gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+} 
+
+.zarovani_textu {
+  align-self: center;
+}
+
+span[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+span[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 0; top: 1.5em;
+  border: 1px var(--secondary) solid;
+  border-radius: .5em;
+  background-color: var(--primary);
+  padding: 1em;
+  font-size: .8em;
+  z-index: 1;
+  color: var(--background);
 }
