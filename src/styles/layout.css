@@ -172,7 +172,7 @@
 }
 
 .vyhody {
-  color: var(--secondary);
+  color: var(--text);
 }
 
 .vyhody__text {
@@ -197,10 +197,6 @@
 
 .swiper-slide {
   font-size: 18px;
-}
-
-.swiper-button-prev, .swiper-button-next {
-  color: var(--secondary, var(--secondary)) !important;
 }
 
 .swiper-wrapper {
@@ -354,7 +350,7 @@ hr {
 }
 
 .uvod__text {
-  color: var(--secondary);
+  color: var(--text);
   text-align: start;
   padding-right: 1em;
   padding-left: 1em;
@@ -362,7 +358,7 @@ hr {
 /* Třetí web */
 .flex_container {
   align-items: center;
-  color: var(--secondary);
+  color: var(--text);
   text-align: start;
 }
 

@@ -5,6 +5,7 @@
     --secondary: #1c1f2b;
     --red: #dc1e2c;
     --blue: #30a2e4;
+    --text: #1c1f2b;
 }
 
 html, body {
@@ -26,13 +27,17 @@ main > * {
     margin-top: 1.5em;
 }
 
-/*    
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-        --background: #242424;
-        --primary: #1c1f2b;
-        --secondary: #001D60;
+      --background: #ffffff;
+      --primary: #002b66;
+      --secondary: #1c1f2b;
+      --red: #dc1e2c;
+      --blue: #30a2e4;
+      --text: #ffffff;
+    }
+    .swiper-scrollbar-drag {
+      background: var(--swiper-scrollbar-drag-bg-color, var(--swiper-navigation-color, var(--swiper-theme-color))) !important;
     }
 }
-*/
