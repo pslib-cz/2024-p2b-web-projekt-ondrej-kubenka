@@ -23,9 +23,20 @@
             <div>
                 <a href="https://www.example.com/" target="_blank"><img class="img-responsive produkty__zaobleni" src="%BASE_URL%images/mapa.webp" alt="Mapa naší pobočky"></a>
             </div>
-            <div class="zarovani_textu">
-                <h1>Kontaktuj nás</h1>
-                <p><span data-tooltip="Neboj se ozvat!">Máš dotaz k batohu nebo objednávce.</span><br>Ozvi se – rádi ti pomůžeme!<br>E-mail: podpora@batohprokazdyden.cz<br>Telefon: +420 777 123 456<br>Adresa: Batoh pro každý den, Ulice 1, 100 00 Bažina</p>
+            <div class="grid__container__text">
+                <div>
+                    <h1 class="zarovani_textu">Kontaktuj nás</h1>
+                    <p><span data-tooltip="Neboj se ozvat!">Máš dotaz k batohu nebo objednávce.</span><br>Ozvi se – rádi ti pomůžeme!<br>E-mail: podpora@batohprokazdyden.cz<br>Telefon: +420 777 123 456<br>Adresa: Batoh pro každý den, Ulice Bažina 69</p>
+                </div>
+                <div class="formular__kontejner">
+                    <h2><strong>Kontaktní formulář</strong> </h2>
+                    <form onsubmit="return check()" class="formular">
+                        <input class="kratky" type="text" id="name" name="name" placeholder="Vaše jméno" required>
+                        <input class="kratky" type="email" id="email" name="email" placeholder="Váš platný email" required>
+                        <input class="dlouhy" type="text" id="message" name="message" placeholder="Co nám potřebujete zdělit" required>
+                        <button type="submit" class="btn">Odeslat</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -40,6 +51,7 @@
             <a href="https://www.example.com/" target="_blank" class="link icon icon-facebook2">&nbsp;Facebook</a>
         </div>
     </footer>    
+    <script type="module" src="/src/scripts/form.js"></script>
     <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>

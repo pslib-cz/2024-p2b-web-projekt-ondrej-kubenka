@@ -107,6 +107,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  box-shadow: 0 1px 3px var(--secondary);
 }
 
 .batoh__uvod::before, .produkty__zauvodem::before {
@@ -156,6 +157,7 @@
 
 .produkty__zaobleni {
   border-radius: 1em;
+  box-shadow: 0 1px 3px var(--secondary);
 }
 
 .produkty__uvod__text {
@@ -181,6 +183,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    box-shadow: 0 1px 3px var(--secondary);
 }
 
 .produkty__text {
@@ -335,9 +338,7 @@ hr {
   }
   .grid__container {
     display: grid;
-    grid-template-columns: 1fr .5fr;
-    gap: 3em !important;
-    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
   } 
   .flex_container {
     display: flex;
@@ -355,6 +356,7 @@ hr {
   background-image: url('/public/images/batoh_about.webp');
   background-size: cover;
   background-position: center;
+  box-shadow: 0 1px 3px var(--secondary);
 }
 
 .uvod__text {
@@ -379,11 +381,50 @@ hr {
 } 
 
 .zarovani_textu {
-  align-self: center;
+  margin-bottom: .2em;
 }
 
-.zarovani_textu h1 {
-  padding-bottom: .2em;
+.grid__container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.formular__kontejner {
+  text-align: center;
+  background-color: var(--form);
+  padding: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 1px 3px var(--secondary);
+}
+
+.formular__kontejner h2 {
+  margin-bottom: 1em;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.kratky  {
+  padding: .3em;   
+}
+
+.dlouhy {
+  padding-left: .3em;
+  padding-bottom: 6em;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--background);
+  border-color: var(--blue);
+  border-radius: 0.25em;
+  padding: 1rem;
 }
 
 span[data-tooltip] {
