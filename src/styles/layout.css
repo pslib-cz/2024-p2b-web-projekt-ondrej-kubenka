@@ -57,8 +57,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  color: black;
-  background-color: #e0e0e0;
+  color: var(--secondary);
+  background-color: var(--background);
   height: 16px;
   width: calc(16px + 3px);
   font-weight: 900;
@@ -66,7 +66,7 @@
   margin: .5em;
   padding-bottom: 3px;
   border-radius: 50%;
-  border: 3px solid #be8024;
+  border: 3px solid var(--blue);
 }
 
 .info a:hover .info__text {
@@ -74,15 +74,15 @@
 }
 
 .info a:hover::before {
-  color: white;
-  background-color: gray;
+  color: var(--background);
+  background-color: var(--secondary);
 }
 
 .info__text {
   position: absolute;
   top: 0;
-  color: white;
-  background-color: rgba(0, 0, 0, .5);
+  color: var(--background);
+  background-color: var(--pruhledna_seda);
   padding: .25em;
   left: 0;
   right: 0;
@@ -113,7 +113,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.425);
+  background: var(--pruhledna_seda);
   z-index: 0;
   border-radius: inherit;
 }
@@ -380,6 +380,10 @@ hr {
 
 .zarovani_textu {
   align-self: center;
+}
+
+.zarovani_textu h1 {
+  padding-bottom: .2em;
 }
 
 span[data-tooltip] {

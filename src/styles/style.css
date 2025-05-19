@@ -6,6 +6,7 @@
     --red: #dc1e2c;
     --blue: #30a2e4;
     --text: #1c1f2b;
+    --pruhledna_seda: #00000070;
 }
 
 html, body {
@@ -30,14 +31,11 @@ main > * {
     margin-right: auto;
 }
 
+
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-      --background: #ffffff;
       --primary: #002b66;
-      --secondary: #1c1f2b;
-      --red: #dc1e2c;
-      --blue: #30a2e4;
       --text: #ffffff;
     }
     .swiper-scrollbar-drag {
